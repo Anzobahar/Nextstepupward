@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pricing — Coaching Sessions, Packages & Membership | NextStepUpward</title>
+  <meta name="description" content="Simple, transparent pricing: single sessions, a 5-session package, and a monthly membership. Secure checkout with Stripe. Cancel anytime." />
+  <meta name="theme-color" content="#0f766e" />
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="brand" aria-label="NextStepUpward home">
+        <svg class="brand-mark" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="40" height="40" rx="11" fill="#0f766e"/><path d="M11 27l6-7 5 4 7-11" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/><circle cx="29" cy="13" r="2.4" fill="#f0c68d"/></svg>
+        NextStepUpward
+      </a>
+      <nav aria-label="Primary">
+        <ul class="nav-links">
+          <li><a href="services.html">Services</a></li>
+          <li><a href="how-it-works.html">How it works</a></li>
+          <li><a href="pricing.html" class="active" aria-current="page">Pricing</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+      <div class="nav-cta">
+        <a href="contact.html" class="btn btn--ghost">Contact</a>
+        <a href="#plans" class="btn btn--primary">Book a session</a>
+      </div>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container inner">
+        <p class="breadcrumb reveal"><a href="index.html">Home</a> / Pricing</p>
+        <span class="eyebrow reveal">Simple pricing</span>
+        <h1 class="reveal">Start small or go all-in</h1>
+        <p class="reveal">No hidden fees. Every plan is charged securely at checkout, with a receipt sent to your inbox. Cancel or reschedule anytime under our fair policy.</p>
+      </div>
+    </section>
+
+    <section class="section" id="plans" style="padding-top:clamp(30px,4vw,50px);">
+      <div class="container">
+        <div id="checkout-error" class="checkout-error" role="alert"></div>
+        <div class="pricing">
+          <div class="price-card reveal">
+            <h3>Single session</h3>
+            <p class="price-card__sub">Try it, no commitment</p>
+            <div class="price">€59 <small>/ session</small></div>
+            <p class="price-note">One 50-minute 1-on-1 video call</p>
+            <ul class="feature-list">
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Matched with a specialist coach</li>
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Personalised action plan</li>
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Session notes &amp; receipt</li>
+            </ul>
+            <button type="button" class="btn btn--ghost btn--block" data-checkout data-item="single">Book a session</button>
+          </div>
+
+          <div class="price-card price-card--featured reveal">
+            <h3>5-session package</h3>
+            <p class="price-card__sub">Best for building momentum</p>
+            <div class="price">€249 <small>/ 5 sessions</small></div>
+            <p class="price-note">Save €46 vs. single sessions</p>
+            <ul class="feature-list">
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Everything in Single, ×5</li>
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Same coach throughout</li>
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Habit tracking between calls</li>
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Progress review at session 5</li>
+            </ul>
+            <button type="button" class="btn btn--primary btn--block" data-checkout data-item="package5">Choose package</button>
+          </div>
+
+          <div class="price-card reveal">
+            <h3>Membership</h3>
+            <p class="price-card__sub">Ongoing support &amp; courses</p>
+            <div class="price">€99 <small>/ month</small></div>
+            <p class="price-note">Cancel anytime · billed monthly</p>
+            <ul class="feature-list">
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>2 live sessions per month</li>
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Full course &amp; workshop library</li>
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Group sessions &amp; community</li>
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Priority scheduling</li>
+            </ul>
+            <button type="button" class="btn btn--ghost btn--block" data-checkout data-item="membership">Start membership</button>
+          </div>
+        </div>
+        <p class="reveal" style="text-align:center;color:var(--ink-500);font-size:.88rem;margin-top:26px;">Prices include VAT where applicable. NextStepUpward B.V. is the Merchant of Record for all purchases. Prefer self-paced learning? Browse our <a href="courses.html">online courses</a>.</p>
+      </div>
+    </section>
+
+    <section class="section section--tint">
+      <div class="container">
+        <div class="section-head reveal"><span class="eyebrow">Good to know</span><h2>Pricing questions</h2></div>
+        <div class="faq reveal">
+          <details open><summary>Can I switch plans later?</summary><p>Yes. Start with a single session and upgrade to a package or membership anytime. Members can pause or cancel from their account.</p></details>
+          <details><summary>What payment methods can I use?</summary><p>Checkout is handled by Stripe and Mollie: iDEAL, Bancontact, SEPA Direct Debit, and Visa/Mastercard. A receipt is emailed automatically.</p></details>
+          <details><summary>Do package sessions expire?</summary><p>Packages are valid for 12 months from purchase. Unused sessions can be refunded pro-rata — see our <a href="refund-policy.html">refund policy</a>.</p></details>
+          <details><summary>How do I cancel a membership?</summary><p>Cancel anytime from your account; billing stops and you keep access until the end of the current month. No cancellation fee.</p></details>
+        </div>
+        <div style="text-align:center;margin-top:30px;" class="reveal"><a href="faq.html" class="btn btn--ghost">See all FAQs</a></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="cta-band reveal">
+          <h2>Still deciding?</h2>
+          <p>Tell us your goal and we'll recommend the right plan — no pressure, no obligation.</p>
+          <a href="contact.html" class="btn btn--light btn--lg">Ask us a question</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="brand" style="color:#fff;">
+            <svg class="brand-mark" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect width="40" height="40" rx="11" fill="#14887e"/>
+              <path d="M11 27l6-7 5 4 7-11" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="29" cy="13" r="2.4" fill="#f0c68d"/>
+            </svg>
+            NextStepUpward
+          </a>
+          <p class="footer-about">Non-medical online coaching and mentoring for personal growth, calm, better sleep and lasting habits.</p>
+          <p class="footer-about" style="margin-top:10px;font-size:.82rem;">NextStepUpward B.V. · also trading as RiseClarity &amp; EaseMentor</p>
+        </div>
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="how-it-works.html">How it works</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="courses.html">Courses</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="mailto:ceo@nextstepupward.com">ceo@nextstepupward.com</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+            <li><a href="refund-policy.html">Refund &amp; Cancellation</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>© <span data-year>2025</span> NextStepUpward B.V. · Registered in the Netherlands. All rights reserved.</div>
+        <div class="badge-row">
+          <span>Stripe</span><span>Mollie</span><span>iDEAL</span><span>SEPA</span><span>GDPR</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Separate backend host? Uncomment: <script>window.NSU_API_BASE="https://your-api-host.example";</script> -->
+  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/checkout.js" defer></script>
+</body>
+</html>

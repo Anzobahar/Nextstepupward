@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Payment successful — NextStepUpward</title>
+  <meta name="robots" content="noindex" />
+  <meta name="theme-color" content="#0f766e" />
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="brand" aria-label="NextStepUpward home">
+        <svg class="brand-mark" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect width="40" height="40" rx="11" fill="#0f766e"/>
+          <path d="M11 27l6-7 5 4 7-11" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="29" cy="13" r="2.4" fill="#f0c68d"/>
+        </svg>
+        NextStepUpward
+      </a>
+    </div>
+  </header>
+
+  <main class="section" style="min-height:60vh;display:grid;place-items:center;text-align:center;">
+    <div class="container" style="max-width:600px;">
+      <div style="width:76px;height:76px;border-radius:50%;background:#e4f6ec;display:grid;place-items:center;margin:0 auto 24px;">
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="#1f9d55" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <span class="eyebrow">Payment received</span>
+      <h1>Thank you — you're all set!</h1>
+      <p style="color:var(--ink-500);font-size:1.08rem;">A receipt is on its way to your email. If you booked coaching, you'll get scheduling details shortly. If you bought a course, your access link follows by email.</p>
+      <p id="ref" style="color:var(--ink-300);font-size:.85rem;"></p>
+      <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:14px;">
+        <a href="index.html" class="btn btn--primary btn--lg">Back to home</a>
+        <a href="courses.html" class="btn btn--ghost btn--lg">Browse courses</a>
+      </div>
+      <p style="color:var(--ink-500);font-size:.9rem;margin-top:26px;">Questions? Email <a href="mailto:ceo@nextstepupward.com">ceo@nextstepupward.com</a>.</p>
+    </div>
+  </main>
+
+  <script>
+    (function () {
+      var p = new URLSearchParams(location.search);
+      var id = p.get("session_id");
+      if (id) document.getElementById("ref").textContent = "Reference: " + id;
+    })();
+  </script>
+</body>
+</html>
